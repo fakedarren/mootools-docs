@@ -1,0 +1,94 @@
+.tabs	{
+	border-bottom: 1px solid #DDD;
+	height: 33px;
+}
+	.tabs LI	{
+		cursor: pointer;
+		float: right;
+		font: bold 1em/18px Helvetica, Arial, sans-serif;
+		margin: 0 0 0 5px;
+		text-align: center;
+	}
+	.tabs LI.tab	{
+		background: #F4F5F5;
+		background: -moz-linear-gradient(top, #FDFDFD, #F4F5F5);
+		background: -webkit-gradient(linear, left top, left bottom, from(#FDFDFD), to(#F4F5F5));
+		border: 1px solid #CCC;
+		border-bottom: none;
+		color: #777;
+		filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#FDFDFD', EndColorStr='#F4F5F5');
+		padding: 8px 0 0;
+		height: 24px;
+		width: 74px;
+		-moz-border-radius-topleft: 6px;
+		-moz-border-radius-topright: 6px;
+		border-top-left-radius: 6px;
+		border-top-right-radius: 6px;
+	}
+	.tabs LI.jsfiddle	{
+		width: 140px;
+	}
+		.tabs LI.jsfiddle button	{
+			cursor: pointer;
+			background: url(graphics/jsfiddle.png) no-repeat;
+			display: block;
+			width: 140px;
+			height: 33px;
+			border: 0;
+			text-indent: -3000px;
+		}
+	.tabs LI.first	{
+		float: left;
+		margin: 0;
+	}
+	.tabs LI.selected	{
+		color: #B86364;
+		height: 25px;
+	}
+	.tabs LI.selected.code {
+		background: #FFF;
+		background: -moz-linear-gradient(top, #FDFDFD, #FFFFFF);
+		background: -webkit-gradient(linear, left top, left bottom, from(#FDFDFD), to(#FFFFFF));
+		filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#FDFDFD', EndColorStr='#FFFFFF');
+	}
+.tabs:AFTER	{
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.tabcontent	{
+	background: #F4F5F5;
+	display: none;
+	padding: 15px 0;
+}
+	.tabcontent IFRAME	{
+		min-height: 500px;
+		width: 100%;
+	}
+.tabcontent.selected	{
+	display: block;
+}
+
+#description	{
+	margin: 0 0 40px;
+}
+
+#jsfiddle_data {
+	display: none;
+}
+
+ul.doc_references {
+	list-style: circle;
+	padding-left: 20px;
+}
+
+.CodeMirror-wrapping {
+	background-color: #FFF;
+	border: 1px solid #DDD;
+	border-top: none;
+	margin: -15px 0 0;
+	padding: 10px;
+}

@@ -1,0 +1,102 @@
+HTML, BODY	{
+	margin: 0;
+	padding: 0;
+}
+
+BODY	{
+	background: #F4F5F5;
+	font: 0.75em "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+H1,
+H2 {
+	color: #C17878;
+	font-size: 2em;
+	line-height: 30px;
+}
+
+H2,
+H3 {
+	color: #78ba91;
+	font-size: 1.7em;
+}
+
+H3 {
+	font-size: 1.5em;
+}
+
+P {
+	line-height: 17px;
+}
+
+A:LINK, A:VISITED {
+    color: #6B7B95;
+}
+
+A:HOVER, A:ACTIVE {
+    color: #E79D35;
+}
+
+UL	{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#header	{
+	background: #F9F9F9;
+	border-bottom: 1px solid #DDD;
+	height: 122px;
+}
+	#header DIV {
+		margin: 0 auto;
+		width: 960px;
+	}
+	#header .button	{
+		margin: 50px 0 0;
+	}
+	#header H1	{
+		background: url(graphics/mootools.png) no-repeat 0 50%;
+		height: 46px;
+		margin: 0 auto;
+		padding: 38px 0;
+		text-indent: -9999px;
+	}
+
+#wrapper {
+	background: url(graphics/gradient.png) repeat-x;
+}
+
+#content {
+	margin: 0 auto;
+	padding: 0 0 50px;
+	width: 960px;
+}
+	#content #leftcolumn {
+		border-right: 1px solid #DDD;
+		float: left;
+		font-size: 1.1em;
+		margin: 25px 24px 0 0;
+		padding: 0 25px 50px 0;
+		width: 150px;
+	}
+		#content #leftcolumn LI	{
+			padding: 1px 0;
+			text-align: right;
+		}
+		#content #leftcolumn H4 {
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+			font-size: 1.2em;
+			color: #313334;
+			line-height: 20px;
+		}
+		#content #leftcolumn A {
+			display: block;
+		}
+	#content #rightcolumn	{
+		float: left;
+		margin: 25px 0 0;
+		overflow: hidden;
+		width: 760px;
+	}
