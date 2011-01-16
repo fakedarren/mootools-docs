@@ -1,22 +1,32 @@
 <?php
-// Example of a 'section method list' page
+// Example of a 'method details' page
 
 require('libs/markdown.php');
 require('libs/geshi/geshi.php');
 
 // Hardcoded for this example
 $path = "Docs/Core/Element/Element.Style.md";
+$method = "Element:setStyle" . "}";
 
 $markdown = file_get_contents($path);
-$trimmed = "";
 
-function splitter($matches){
-	global $trimmed;
-	$trimmed .= $matches[0];
+$lines = split("[\n|\r]", $markdown);
+$adding = false;
+$html = "";
+
+foreach ($lines as $linenumber=>$line){
+	if (strpos($line, $method) !== false and strpos($lines[$linenumber + 1], "===") == 0){
+		$adding = true;
+	}
+	if (strlen($line) == 0 and strlen($lines[$linenumber + 1]) == 0){
+		$adding = false;
+	}
+	if ($adding == true) $html .= $line . "\r\n";
 }
 
-$markdown = preg_replace_callback('{(.*[\\r|\\n]--+[\\r|\\n][^#]*)}', 'splitter', $markdown);
-$html = markdown($trimmed);
+$html = trim($html);
+
+$html = markdown($html);
 
 function geshi($matches){
 	$source = $matches[0];
