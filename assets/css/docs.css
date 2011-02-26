@@ -1,0 +1,71 @@
+#rightcolumn {
+	padding-bottom: 50px;
+}
+	#rightcolumn PRE {
+		background: #FFF;	
+		font-size: 1.2em;
+		line-height: 20px;
+		padding: 20px 20px 0;
+	}
+
+.docs-list {
+}
+	.docs-list LI {
+		border-bottom: 1px solid #DDD;
+	}
+	.docs-list LI:HOVER {
+		background: #EEE;
+	}
+		.docs-list LI A {
+			text-decoration: none;
+		}
+		.docs-list LI A:AFTER {
+			clear: both;
+			content: ".";
+			display: block;
+			height: 0;
+			visibility: hidden;
+		}
+		.docs-list LI H2 {
+			float: left;
+			line-height: 26px;
+			margin: 0;
+			position: absolute;
+			width: 100%;
+		}
+		.docs-list LI .type {
+			border: 1px solid #333;
+			float: right;
+			font-size: 10px;
+			font-variant: small-caps;
+			line-height: 16px;
+			margin: 4px;
+			padding: 0 4px;
+		}
+
+
+/* Geshi */
+.kw1 {
+	color: #1b609a;
+}
+.kw2 {
+	color: #9a6f1b;
+}
+.me1 {
+	color: #666;
+}
+.kw3, .re0, .sc1 {
+	color: #784e0c;
+}
+.br0 {
+	color: #444;
+}
+.st0 {
+	color: #489a1b;
+}
+.co1, .coMULTI {
+	color: #888;
+}
+.nu0 {
+	color: #70483d;
+}

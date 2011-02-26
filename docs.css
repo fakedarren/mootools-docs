@@ -1,0 +1,45 @@
+
+.docs-menu {
+	float: left;
+	min-height: 1px;
+}
+.docs-content {
+	float: left;
+	width: 600px;
+}
+
+
+.docs-list {
+}
+	.docs-list LI {
+		border-bottom: 1px solid #DDD;
+	}
+	.docs-list LI:HOVER {
+		background: #EEE;
+	}
+		.docs-list LI A {
+			text-decoration: none;
+		}
+		.docs-list LI A:AFTER {
+			clear: both;
+			content: ".";
+			display: block;
+			height: 0;
+			visibility: hidden;
+		}
+		.docs-list LI H2 {
+			float: left;
+			line-height: 26px;
+			margin: 0;
+			position: absolute;
+			width: 100%;
+		}
+		.docs-list LI .type {
+			border: 1px solid #333;
+			float: right;
+			font-size: 10px;
+			font-variant: small-caps;
+			line-height: 16px;
+			margin: 4px;
+			padding: 0 4px;
+		}

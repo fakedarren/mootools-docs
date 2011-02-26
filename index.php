@@ -4,9 +4,9 @@ require('libs/geshi/geshi.php');
 
 $url = explode("/", $_SERVER["REQUEST_URI"]);
 
-$section = $url[1];
-$type = $url[2];
-$method = $url[3];
+$section = $url[2];
+$type = $url[3];
+$method = $url[4];
 
 $path = "Docs/$section/$type/$method.md";
  
