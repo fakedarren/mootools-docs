@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <?php
 
-error_reporting(0);
+//error_reporting(0);
 
 require('libs/markdown.php');
 require('libs/geshi/geshi.php');
-require('libs/yaml.php');
+//require('libs/yaml.php');
 require('libs/docs.php');
+require('libs/packager/packager.php');
 
 $url = explode("/", $_SERVER["REQUEST_URI"]);
 
@@ -42,5 +43,5 @@ $content = $transform->transformToXML($html);
 $content = preg_replace_callback('{<pre[^>]*>([\s\S]*?)<\/pre>}', "geshi", $content);
 $content = preg_replace_callback('{<h3[^>]*>Demo:</h3>([\s\S]*?)<h3[^>]*>}', "demos", $content);
 
-echo $content;
+echo $content;	
 ?>

@@ -8,6 +8,7 @@
 	<xsl:param name="section"/>
 	<xsl:param name="type"/>
 	<xsl:param name="method"/>
+	<xsl:param name="menu"/>
 	
 	<xsl:variable name="index">
 		<xsl:for-each select="//h2">
