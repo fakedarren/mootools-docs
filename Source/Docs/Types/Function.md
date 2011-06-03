@@ -8,6 +8,9 @@ Function Methods.
 - [MDC Function][]
 
 
+----------------------------------------
+
+
 
 Function: Function.from {#Function:Function-from}
 ----------------------------------------
@@ -316,6 +319,10 @@ Executes a function in the specified intervals of time. Periodic execution can b
 ### See Also:
 
 - [MDC setInterval][], [MDC clearInterval][]
+
+
+----------------------------------------
+
 
 
 Deprecated Functions {#Deprecated-Functions}

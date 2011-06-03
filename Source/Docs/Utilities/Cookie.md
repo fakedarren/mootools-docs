@@ -19,6 +19,9 @@ Sets and accesses cookies.
 - In order to share the Cookie with pages located in a different path, the [Cookie.options.domain][] value must be set.
 
 
+----------------------------------------
+
+
 
 Cookie Method: write {#Cookie:write}
 --------------------------------

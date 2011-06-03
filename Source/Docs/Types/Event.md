@@ -3,6 +3,11 @@ Type: Event {#Event}
 
 MooTools Event Methods.
 
+
+----------------------------------------
+
+
+
 Event Method: constructor {#Event:constructor}
 ----------------------------------------------
 
@@ -159,6 +164,10 @@ Cross browser method to prevent the default action of the event.
 - [MDC event.preventDefault](http://developer.mozilla.org/en/docs/DOM:event.preventDefault)
 
 
+----------------------------------------
+
+
+
 Object: Event.Keys {#Event-Keys}
 ==============================
 
@@ -191,6 +200,7 @@ Additional Event key codes can be added by adding properties to the Event.Keys O
 ### Note:
 
 Since MooTools 1.3 this is a native JavaScript Object and not an instance of the deprecated Hash
+
 
 
 [Element:addEvent]: /core/Element/Element.Event#Element:addEvent

@@ -12,6 +12,9 @@ A collection of the Number Object methods and functions.
 Every Math method is mirrored in the Number object, both as prototype and generic.
 
 
+----------------------------------------
+
+
 
 Function: Number.from {#Number:Number-from}
 ------------------------------------

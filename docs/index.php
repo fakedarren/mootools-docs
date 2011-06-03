@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <?php
 
-//error_reporting(0);
+error_reporting(0);
 
 require('libs/markdown.php');
 require('libs/geshi/geshi.php');
-//require('libs/yaml.php');
+require('libs/yaml.php');
 require('libs/docs.php');
-require('libs/packager/packager.php');
 
 $url = explode("/", $_SERVER["REQUEST_URI"]);
 
@@ -16,16 +15,18 @@ $type = $url[3];
 $method = '';
 $template = 'list';
 
+$source = file_get_contents('../Source/Docs/' . $section . '/' . $type . '.md');
+$content = markdown($source);
+
 if (count($url) > 4 && $url[4] != ''){
 	$template = 'details';
 	$method = $url[4];
+} else {
+	$content = getHTML($content);
 }
 
-$source = file_get_contents('../Source/Docs/' . $section . '/' . $type . '.md');
-$markdown = markdown($source);
-
 $html = new DomDocument;
-$html->loadHTML($markdown);
+$html->loadHTML($content);
 
 $xsl = new DomDocument;
 $xsl->load("templates/$template.xsl");
@@ -41,7 +42,7 @@ $transform->setParameter('', 'method', $method);
 $content = $transform->transformToXML($html);
 
 $content = preg_replace_callback('{<pre[^>]*>([\s\S]*?)<\/pre>}', "geshi", $content);
-$content = preg_replace_callback('{<h3[^>]*>Demo:</h3>([\s\S]*?)<h3[^>]*>}', "demos", $content);
+$content = preg_replace_callback('{<h3[^>]*>Demo: ([\s\S]*?)</h3>}', "demos", $content);
 
-echo $content;	
+echo $content;
 ?>

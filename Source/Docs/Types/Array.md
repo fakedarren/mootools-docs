@@ -8,6 +8,10 @@ A collection of Array methods and functions.
 - [MDC Array][]
 
 
+----------------------------------------
+
+
+
 Function: Array.each {#Array:Array-each}
 ----------------------------------
 

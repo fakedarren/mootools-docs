@@ -3,6 +3,11 @@ Type: Window {#Window}
 
 The following functions are treated as Window methods.
 
+
+----------------------------------------
+
+
+
 Function: document.id {#Window:document-id}
 -------------------------------------------
 
@@ -24,9 +29,7 @@ The document.id function has a dual purpose: Getting the element by its id, and 
 * (*element*) A DOM element.
 * (*null*) Null if no matching id was found or if toElement did not return an element.
 
-### Demo:
-
-* [this test](/demos/?Drag.Cart)
+### Demo: Fx.Sort
 
 ### Examples:
 
@@ -121,10 +124,17 @@ The Element instance returned is an array-like object, supporting every [Array][
 - Default Selectors supported are the same as you can find on [W3C CSS3 selectors](http://www.w3.org/TR/css3-selectors/#selectors).
 
 
+----------------------------------------
+
+
+
 Type: Element {#Element}
 ========================
 
 Custom Type to allow all of its methods to be used with any extended DOM Element.
+
+
+----------------------------------------
 
 
 
@@ -1550,6 +1560,7 @@ Eliminates a key from the Elements storage.
 	$('element').eliminate('someProperty');
 
 
+----------------------------------------
 
 
 
@@ -1598,6 +1609,9 @@ Additionally, you can access these custom getters and setters using an object as
 
 - Automatically returns the element for setters.
 - Since MooTools 1.3 this is a native JavaScript Object and not an instance of the deprecated Hash
+
+
+----------------------------------------
 
 
 
@@ -1735,11 +1749,17 @@ Returns the tag name of the Element in lower case.
 	var myTag = $('myImage').get('tag'); // myTag = 'img'
 
 
+----------------------------------------
+
+
 
 Type: IFrame {#IFrame}
 ========================
 
 Custom Type to create and easily work with IFrames.
+
+
+----------------------------------------
 
 
 
@@ -1799,11 +1819,17 @@ Creates an IFrame HTML Element and extends its window and document with MooTools
 - An IFrame's window and document will not be extended with MooTools methods.
 
 
+----------------------------------------
+
+
 
 Type: Elements {#Elements}
 ============================
 
 The Elements class allows [Element][] methods to work on an [Elements][] array, as well as [Array][] Methods.
+
+
+----------------------------------------
 
 
 
@@ -1873,8 +1899,18 @@ It also works like [Array:filter][], by filtering collection of elements with a 
 * (*array*) A subset of this [Elements][] instance.
 
 
+----------------------------------------
+
+
+
 Deprecated Functions {#Deprecated-Functions}
 ============================================
+
+
+----------------------------------------
+
+
+
 
 Element Method: hasChild {#Deprecated-Functions:hasChild}
 ---------------------------------------------------------

@@ -22,7 +22,7 @@
 	<xsl:variable name="end"><xsl:value-of select="$start + 1"/></xsl:variable>
 	
 	<xsl:template name="content">
-		<p><a href="/docs/{$section}/{$type}/">Back</a></p>
+		<p><a href="/docs/{$section}/{$type}">Back</a></p>
 		<h1><xsl:value-of select="//h2[number($start)]"/></h1>
 		<xsl:copy-of select="//h2[number($start)]/following-sibling::node()[count(.|//h2[number($end)]/preceding-sibling::node())=count(//h2[number($end)]/preceding-sibling::node())]"/>
 	</xsl:template>

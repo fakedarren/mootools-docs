@@ -4,6 +4,9 @@ Type: Core {#Core}
 Core contains a handful of common sense functions used in [MooTools](http://mootools.net).
 
 
+----------------------------------------
+
+
 
 Function: typeOf {#Core:typeOf}
 --------------------------
@@ -80,8 +83,17 @@ Checks to see if an object is an instance of a particular Type.
 	instanceOf(bar, myClass)	// returns true
 
 
+----------------------------------------
+
+
+
 Type {#Type}
 ============
+
+
+----------------------------------------
+
+
 
 MooTools extends native types, like String, Array and Number to make them even more useful.
 
@@ -101,8 +113,10 @@ Custom MooTools types are:
 - Elements
 - Event
 
+
 Type method: implement {#Type:implement}
 ----------------------------------------
+
 
 This method implements a new method to the Type's prototype.
 
@@ -196,6 +210,7 @@ Or
 		// do certain calculations
 	});
 
+
 Generics {#Type:generics}
 -------------------------
 
@@ -231,8 +246,18 @@ MooTools.
 - (*mixed*) anything the method usually returns
 
 
+----------------------------------------
+
+
+
 Deprecated Functions {#Deprecated-Functions}
 ============================================
+
+stuff
+
+
+----------------------------------------
+
 
 
 Function: $chk {#Deprecated-Functions:chk}
@@ -398,3 +423,9 @@ This method has been deprecated. Please use [typeOf](#Core:typeOf) instead.
 [Function:periodical]: /core/Types/Function/#periodical
 [MDC clearInterval]: https://developer.mozilla.org/en/DOM/window.clearInterval
 [MDC clearTimeout]: https://developer.mozilla.org/en/DOM/window.clearTimeout
+
+
+----------------------------------------
+
+
+

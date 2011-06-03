@@ -199,6 +199,9 @@ data-userid attribute of the clicked link, which will be used for the querystrin
 	});
 
 
+----------------------------------------
+
+
 
 Request Method: setHeader {#Request:setHeader}
 --------------------------------------
@@ -357,10 +360,19 @@ Returns true if the request is currently running
 	if (myRequest.isRunning()) // It runs!
 
 
+----------------------------------------
+
+
+
 Object: Element.Properties {#Element-Properties}
 ==============================================
 
 see [Element.Properties][]
+
+
+----------------------------------------
+
+
 
 Element Property: send {#Element-Properties:send}
 -------------------------------------------------
@@ -408,10 +420,19 @@ Returns the previously set Request instance (or a new one with default options).
 	el.send();
 	el.get('send'); // returns the Request instance.
 
+
+----------------------------------------
+
+
+
 Type: Element {#Element}
 ========================
 
 Custom Type to allow all of its methods to be used with any DOM element via the dollar function [$][].
+
+
+----------------------------------------
+
 
 
 Element Method: send {#Element:send}

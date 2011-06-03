@@ -65,6 +65,9 @@ separating the logic and styles:
 - [Fx][]
 
 
+----------------------------------------
+
+
 
 Fx.Morph Method: set {#Fx-Morph:set}
 ------------------------------------
@@ -130,10 +133,19 @@ Executes a transition for any number of CSS properties in tandem.
 - Multiple selectors (with commas) are not supported.
 
 
+----------------------------------------
+
+
+
 Object: Element.Properties {#Element-Properties}
 ==============================================
 
 see [Element.Properties][]
+
+
+----------------------------------------
+
+
 
 Element Property: morph {#Element-Properties:morph}
 ---------------------------------------------------
@@ -182,9 +194,17 @@ Gets the default Fx.Morph instance for the Element.
 	el.get('morph'); // the Fx.Morph instance.
 
 
+----------------------------------------
+
+
 
 Type: Element {#Element}
 ==========================
+
+
+----------------------------------------
+
+
 
 Element Method: morph {#Element:morph}
 --------------------------------------

@@ -4,6 +4,9 @@ Type: Element {#Element}
 Custom Type to allow all of its methods to be used with any DOM element via the dollar function [$][].
 
 
+----------------------------------------
+
+
 
 Element Method: setStyle {#Element:setStyle}
 --------------------------------------------

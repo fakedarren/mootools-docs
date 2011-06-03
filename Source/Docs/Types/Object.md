@@ -7,6 +7,11 @@ A collection of Object functions.
 
 - [MDC Object][]
 
+
+----------------------------------------
+
+
+
 Function: Object.each {#Object:Object-each}
 ------------------------------------
 
@@ -481,8 +486,17 @@ Generates a query string from key/value pairs in an object and URI encodes the v
 	Object.toQueryString({apple: 'red', lemon: 'yellow'}, 'fruits'); // returns 'fruits[apple]=red&fruits[lemon]=yellow'
 
 
+----------------------------------------
+
+
+
 Deprecated Functions {#Deprecated-Functions}
 ============================================
+
+
+----------------------------------------
+
+
 
 Type: Hash {#Deprecated-Functions:Hash}
 --------------------------------------

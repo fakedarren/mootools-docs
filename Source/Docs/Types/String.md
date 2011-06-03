@@ -8,6 +8,9 @@ A collection of the String Object methods and functions.
 - [MDC String][]
 
 
+----------------------------------------
+
+
 
 Function: String.from {#String:String-from}
 ------------------------------------

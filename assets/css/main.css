@@ -4,7 +4,7 @@ HTML, BODY	{
 }
 
 BODY	{
-	background: #F4F5F5;
+	background: #F7F9FA;
 	font: 0.75em "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -43,30 +43,61 @@ UL	{
 	padding: 0;
 }
 
-#header	{
-	background: #F9F9F9;
-	border-bottom: 1px solid #DDD;
-	height: 122px;
+HEADER	{
+	background: #FFF;
+	border-bottom: 1px solid #CFCFCF;
+	border-top: 6px solid #1B3549;
+	height: 105px;
+
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 0 5px #888;
+	box-shadow: 0 2px 5px #CCC;
 }
-	#header DIV {
+	HEADER DIV {
 		margin: 0 auto;
 		width: 960px;
 	}
-	#header .button	{
-		margin: 50px 0 0;
-	}
-	#header H1	{
+	HEADER H1	{
 		background: url(graphics/mootools.png) no-repeat 0 50%;
+		float: left;
 		height: 46px;
 		margin: 0 auto;
-		padding: 38px 0;
+		padding: 25px 0;
 		text-indent: -9999px;
+		width: 200px;
 	}
-
-#wrapper {
-	background: url(graphics/gradient.png) repeat-x;
-}
-
+	HEADER UL {
+		font: normal "CartoGothic Std";
+		float: right;
+		padding: 15px 0 0;
+	}
+		HEADER UL LI {
+			display: inline-block;
+			font-size: 13px;
+			height: 28px;
+			line-height: 28px;
+			padding: 0 10px;
+		}
+		HEADER UL A {
+			color: #366993;
+			text-decoration: none;
+		}
+	HEADER .views {
+		clear: right;
+		padding: 37px 0 0 0;
+	}
+		HEADER .views LI {
+			cursor: pointer;
+			font-size: 11px;
+			height: 25px;
+			line-height: 25px;
+		}
+		HEADER .views LI.selected {
+			font-weight: bold;
+		}
+		HEADER .views INPUT {
+			width: 160px;
+		}
 #content {
 	margin: 0 auto;
 	padding: 0 0 50px;
@@ -76,12 +107,15 @@ UL	{
 		border-right: 1px solid #DDD;
 		float: left;
 		font-size: 1.1em;
-		margin: 25px 24px 0 0;
-		padding: 0 25px 50px 0;
+		margin: 5px 24px 0 0;
+		padding: 0 25px 10px 0;
 		width: 150px;
 	}
+		#content #leftcolumn DIV + H4	{
+			padding: 10px 0 0;
+		}
 		#content #leftcolumn LI	{
-			padding: 1px 0;
+			padding: 5px 0;
 			text-align: right;
 		}
 		#content #leftcolumn H4 {
@@ -90,9 +124,11 @@ UL	{
 			font-size: 1.2em;
 			color: #313334;
 			line-height: 20px;
+			margin: 0 0 3px;
 		}
 		#content #leftcolumn A {
 			display: block;
+			padding: 2px 2px 2px 10px;
 		}
 	#content #rightcolumn	{
 		float: left;

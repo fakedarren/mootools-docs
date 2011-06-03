@@ -14,6 +14,9 @@ Custom Type to allow all of its methods to be used with any DOM element via the 
 - Viewport dimensions based on [YUI](http://developer.yahoo.com/yui/) code, [BSD License](http://developer.yahoo.com/yui/license.html).
 
 
+----------------------------------------
+
+
 
 Element Method: scrollTo {#Element:scrollTo}
 --------------------------------------------

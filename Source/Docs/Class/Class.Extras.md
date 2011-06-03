@@ -6,6 +6,9 @@ Its methods can be implemented with [Class:implement][] into any [Class][], and 
 In [Fx][], for example, it is used to create custom, complex animations.
 
 
+----------------------------------------
+
+
 
 Chain Method: constructor {#Chain:constructor}
 ----------------------------------------------
@@ -134,6 +137,9 @@ Clears the stack of a Chain instance.
 - [Fx][], [Fx.Tween][]
 
 
+----------------------------------------
+
+
 
 Class: Events {#Events}
 =======================
@@ -180,6 +186,9 @@ Events in a Class that implements [Events][] must be either added as an option o
 ### See Also:
 
 - [Class][], [Options][]
+
+
+----------------------------------------
 
 
 
@@ -321,6 +330,9 @@ Removes all events of the given type from the stack of events of a Class instanc
 - removeEvents will not remove internal events. See [Events:removeEvent][].
 
 
+----------------------------------------
+
+
 
 Class: Options {#Options}
 =========================
@@ -338,6 +350,9 @@ Will also add Class [Events][] when the option property begins with 'on' and is 
 #### For existing classes:
 
 	MyClass.implement(Options);
+
+
+----------------------------------------
 
 
 
@@ -428,9 +443,6 @@ If a Class has [Events][] as well as [Options][] implemented, every option begin
 	myWidget.show(); // fires the event and alerts 'Lets show it!'
 
 
-Deprecated Functions {#Deprecated-Functions}
-============================================
-
 [Class]: /core/Class/Class
 [Class:implement]: /core/Class/Class/#Class:implement
 [Fx]: /core/Fx/Fx
@@ -442,3 +454,9 @@ Deprecated Functions {#Deprecated-Functions}
 [Options]: #Options
 [addEvent]: #Events:addEvent
 [addEvents]: #Events:addEvents
+
+
+----------------------------------------
+
+
+
