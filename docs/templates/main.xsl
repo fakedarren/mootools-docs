@@ -32,37 +32,48 @@
 			<div id="wrapper">
 				<div id="content">
 					<div id="leftcolumn">
+						<h4>ART - Core</h4>
+						<div><a href="/docs/ART/ART">ART</a></div>
+						<div><a href="/docs/ART/ART.Group">ART.Group</a></div>
+						<div><a href="/docs/ART/ART.Path">ART.Path</a></div>
+						<div><a href="/docs/ART/ART.Shape">ART.Shape</a></div>
+						<div><a href="/docs/ART/ART.Transform">ART.Transform</a></div>
+						<h4>ART - Shapes</h4>
+						<div><a href="/docs/Shapes/ART.Shapes">ART.Shapes</a></div>
+						<div><a href="/docs/Shapes/ART.Font">ART.Font</a></div>
+						<div><a href="/docs/Shapes/ART.Text">ART.Text</a></div>
 						<h4>Elements</h4>
-						<div><a href="/docs/Element/Element">Selecting</a></div>
-						<div><a href="/docs/Element/Element.Style">Styling</a></div>
-						<div><a href="/docs/Element/Element.Event">Events</a></div>
-						<div><a href="/docs/Element/Element.Dimensions">Dimensions</a></div>
+						<div><a href="/docs/Element/Element">Selecting <span>Element</span></a></div>
+						<div><a href="/docs/Slick/Slick">Selecting <span>Slick</span></a></div>
+						<div><a href="/docs/Element/Element.Style">Styling <span>Element.Style</span></a></div>
+						<div><a href="/docs/Element/Element.Event">Events <span>Element.Event</span></a></div>
+						<div><a href="/docs/Element/Element.Dimensions">Dimensions <span>Element.Dimensions</span></a></div>
 						<h4>Animations</h4>
-						<div><a href="/docs/Fx/Fx.Tween">Simple animations</a></div>
-						<div><a href="/docs/Fx/Fx.Morph">Complex animations</a></div>
-						<div><a href="/docs/Fx/Fx.Transitions">Transitions</a></div>
-						<div><a href="/docs/Fx/Fx">Core functions</a></div>
+						<div><a href="/docs/Fx/Fx.Tween">Animations <span>Fx.Tween</span></a></div>
+						<div><a href="/docs/Fx/Fx.Morph">Animations <span>Fx.Morph</span></a></div>
+						<div><a href="/docs/Fx/Fx.Transitions">Transitions <span>Fx.Transitions</span></a></div>
+						<div><a href="/docs/Fx/Fx">Core functions <span>Fx</span></a></div>
 						<h4>Ajax</h4>
-						<div><a href="/docs/Request/Request">Simple Ajax</a></div>
-						<div><a href="/docs/Request/Request.HTML">Working with HTML</a></div>
-						<div><a href="/docs/Request/Request.JSON">Working with JSON</a></div>
-						<h4>ES5 Shims</h4>
-						<div><a href="/docs/Types/Array">Array helpers</a></div>
-						<div><a href="/docs/Types/String">String helpers</a></div>
-						<div><a href="/docs/Types/Number">Number helpers</a></div>
-						<div><a href="/docs/Types/Function">Function helpers</a></div>
-						<div><a href="/docs/Types/Object">Object helpers</a></div>
-						<div><a href="/docs/Types/Event">Event helpers</a></div>
+						<div><a href="/docs/Request/Request">Simple Ajax <span>Request</span></a></div>
+						<div><a href="/docs/Request/Request.HTML">Working with HTML <span>Request.HTML</span></a></div>
+						<div><a href="/docs/Request/Request.JSON">Working with JSON <span>Request.JSON</span></a></div>
+						<h4>Natives</h4>
+						<div><a href="/docs/Types/Array">Array helpers <span>Array</span></a></div>
+						<div><a href="/docs/Types/String">String helpers <span>String</span></a></div>
+						<div><a href="/docs/Types/Number">Number helpers <span>Number</span></a></div>
+						<div><a href="/docs/Types/Function">Function helpers <span>Function</span></a></div>
+						<div><a href="/docs/Types/Object">Object helpers <span>Object</span></a></div>
+						<div><a href="/docs/Types/Event">Event helpers <span>Event</span></a></div>
 						<h4>Classes</h4>
-						<div><a href="/docs/Class/Class">Basics</a></div>
-						<div><a href="/docs/Class/Class.Extras">Mixins</a></div>
+						<div><a href="/docs/Class/Class">Basics <span>Class</span></a></div>
+						<div><a href="/docs/Class/Class.Extras">Mixins <span>Class.Extras</span></a></div>
 						<h4>Utilities</h4>
-						<div><a href="/docs/Core/Core">Core</a></div>
-						<div><a href="/docs/Utilities/Cookie">Cookie</a></div>
-						<div><a href="/docs/Utilities/JSON">JSON</a></div>
-						<div><a href="/docs/Utilities/DOMReady">DOMReady</a></div>
-						<div><a href="/docs/Browser/Browser">Browser</a></div>
-						<div><a href="/docs/Utilities/Swiff">Swiff</a></div>
+						<div><a href="/docs/Core/Core">Core <span>Core</span></a></div>
+						<div><a href="/docs/Utilities/Cookie">Cookie <span>Cookie</span></a></div>
+						<div><a href="/docs/Utilities/JSON">JSON <span>JSON</span></a></div>
+						<div><a href="/docs/Utilities/DOMReady">DOMReady <span>DOMReady</span></a></div>
+						<div><a href="/docs/Browser/Browser">Browser <span>Browser</span></a></div>
+						<div><a href="/docs/Utilities/Swiff">Swiff <span>Swiff</span></a></div>
 					</div>
 					<div id="rightcolumn">
 						<xsl:call-template name="content"/>

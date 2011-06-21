@@ -25,6 +25,27 @@
 		<p><a href="/docs/{$section}/{$type}">Back</a></p>
 		<h1><xsl:value-of select="//h2[number($start)]"/></h1>
 		<xsl:copy-of select="//h2[number($start)]/following-sibling::node()[count(.|//h2[number($end)]/preceding-sibling::node())=count(//h2[number($end)]/preceding-sibling::node())]"/>
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+<![CDATA[	
+
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'moodocs'; // required: replace example with your forum shortname
+
+    // The following are highly recommended additional parameters. Remove the slashes in front to use.
+    // var disqus_identifier = 'fdsfksflksdfkdslfs';
+    // var disqus_url = 'http://example.com/permalink-to-page.html';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 	</xsl:template>
 
 </xsl:stylesheet>
