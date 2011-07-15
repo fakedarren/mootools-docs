@@ -23,17 +23,17 @@ Fx Method: constructor {#Fx:constructor}
 
 ### Options:
 
-* fps        - (*number*: defaults to 50) The frames per second for the transition.
-* unit       - (*string*: defaults to false) The unit, e.g. 'px', 'em', or '%'. See [Element:setStyle](/Element/Element/#Element:setStyle).
-* link       - (*string*: defaults to ignore) Can be 'ignore', 'cancel' and 'chain'.
-	* 'ignore' - Any calls made to start while the effect is running will be ignored. (Synonymous with 'wait': true from 1.x)
-	* 'cancel' - Any calls made to start while the effect is running will take precedence over the currently running transition. The new transition will start immediately, canceling the one that is currently running. (Synonymous with 'wait': false from 1.x)
-	* 'chain'  - Any calls made to start while the effect is running will be chained up, and will take place as soon as the current effect has finished, one after another.
-* duration   - (*number*: defaults to 500) The duration of the effect in ms. Can also be one of:
-	* 'short'  - 250ms
-	* 'normal' - 500ms
-	* 'long'   - 1000ms
-* transition - (*function*: defaults to ['sine:in:out'](/Fx/Fx.Transitions) The equation to use for the effect see [Fx.Transitions](/Fx/Fx.Transitions). Also accepts a string in the following form:
+* __fps__        - (*number*: defaults to 50) The frames per second for the transition.
+* __unit__       - (*string*: defaults to false) The unit, e.g. 'px', 'em', or '%'. See [Element:setStyle](/Element/Element/#Element:setStyle).
+* __link__       - (*string*: defaults to ignore) Can be 'ignore', 'cancel' and 'chain'.
+	* -'ignore' - Any calls made to start while the effect is running will be ignored. (Synonymous with 'wait': true from 1.x)
+	* -'cancel' - Any calls made to start while the effect is running will take precedence over the currently running transition. The new transition will start immediately, canceling the one that is currently running. (Synonymous with 'wait': false from 1.x)
+	* -'chain'  - Any calls made to start while the effect is running will be chained up, and will take place as soon as the current effect has finished, one after another.
+* __duration__   - (*number*: defaults to 500) The duration of the effect in ms. Can also be one of:
+	* -'short'  - 250ms
+	* -'normal' - 500ms
+	* -'long'   - 1000ms
+* __ransition__ - (*function*: defaults to ['sine:in:out'](/Fx/Fx.Transitions) The equation to use for the effect see [Fx.Transitions](/Fx/Fx.Transitions). Also accepts a string in the following form:
 
   transition\[:in\]\[:out\] - for example, 'linear', 'quad:in', 'back:in', 'bounce:out', 'elastic:out', 'sine:in:out'
 
@@ -43,6 +43,23 @@ Fx Method: constructor {#Fx:constructor}
 * cancel   		- (*function*) The function to execute when you manually stop the effect.
 * complete 		- (*function*) The function to execute after the effect has processed.
 * chainComplete	- (*function*) The function to execute when using link 'chain' ([see options](#Fx:constructor)). It gets called after all effects in the chain have completed.
+
+### Syntax:
+
+	var myFxWithEvents = new Fx('myElement', { 
+		// options; 
+		duration: 'long',
+		// events; 
+		onStart: function() { 
+			// as the animation starts, do this...
+		},
+		onCancel: function() {
+			// if the animation is caneled, this this...
+		}, 
+		onComplete: function() {
+			// the animation has finished, do this...
+		}
+	});
 
 ### Notes:
 
