@@ -27,6 +27,15 @@ H2 {
 	#rightcolumn HR {
 		clear: both;
 	}
+	
+	#rightcolumn ul li strong {
+		display: inline-block;
+		min-width: 50px;
+	}
+	
+	#rightcolumn ul li ul li {
+		padding-left: 60px;
+	}
 
 SECTION {
 	padding: 30px 0 0;
