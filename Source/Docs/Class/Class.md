@@ -33,7 +33,7 @@ The methods of this Class that have the same name as the Extends Class, will hav
 * (*class*)  The properties of a passed Class will be copied into the target Class.
 * (*array*)  An array of objects or Classes, the properties of which will be copied into this Class.
 
-Implements is similar to Extends, except that it adopts properties from one or more other classes without inheritance.
+Implements is similar to Extends, except that it clones properties from one or more other classes without inheriting the cloned properties to extending Classes.
 Useful when implementing a default set of properties in multiple Classes.  The Implements property should come after Extends but before all other properties.
 
 #### Property: initialize
