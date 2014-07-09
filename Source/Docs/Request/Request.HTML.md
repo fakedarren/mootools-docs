@@ -45,6 +45,20 @@ Request Specifically made for receiving HTML.
 
 ### Examples:
 
+	var myHTMLRequest = new Request.HTML({
+		url: 'ajax.php',
+		onComplete: function(responseTree, responseElements, responseHTML, responseJavaScript) {
+			
+			// update our container with the returned HTML.
+			document.id('myContainer').set('html', responseHTML);
+			
+			// fire the Javascript returned in the request.
+			$exec(responseJavaScript);
+			
+		}
+	}).send();
+
+
 #### Simple GET Request:
 
 	var myHTMLRequest = new Request.HTML().get('myPage.html');
@@ -62,18 +76,20 @@ Request Specifically made for receiving HTML.
 
 ##### HTML
 
-	<form action="save/" method="post" id="user-form">
+
+	 <form action="save/" method="post" id="user-form"> 
 		<p>
 			Search: <input type="text" name="search" />
 			Search in description: <input type="checkbox" name="search_description" value="yes" />
 			<input type="submit" />
 		</p>
 	</form>
+	
 
 ##### JavaScript
 
 	//Needs to be in a submit event or the form handler.
-	var myHTMLRequest = new Request.HTML({url:'save/'}).post($('user-form'));
+	var myHTMLRequest = new Request.HTML({ url: $('user-form').get('action') }).post($('user-form'));
 
 ### See Also:
 
